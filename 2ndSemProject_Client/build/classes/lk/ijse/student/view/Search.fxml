@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="625.0" prefWidth="658.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.student.view.SearchController">
+   <children>
+      <ImageView fitHeight="547.0" fitWidth="832.0" layoutX="12.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/android-2160x1920-wallpaper_02033.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="14.0" layoutY="76.0" opacity="0.76" prefHeight="207.0" prefWidth="631.0" style="-fx-background-color: #68b9ed;">
+         <children>
+            <AnchorPane layoutY="-7.0" prefHeight="197.0" prefWidth="631.0" style="-fx-background-color: #00a1ff;" />
+            <ImageView fitHeight="145.0" fitWidth="202.0" layoutX="2.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/selena_gomez_circle_png_by_lovingsellygrande-d4u8yew.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="188.0" layoutY="207.0" prefHeight="28.0" prefWidth="254.0" text="Student Name">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="188.0" layoutY="235.0" prefHeight="17.0" prefWidth="75.0" text="Student Id" />
+            <JFXTextField fx:id="sidTxt" layoutX="263.0" layoutY="223.0" onAction="#idAction" prefHeight="25.0" prefWidth="97.0" />
+            <JFXTextField fx:id="nameTxt" layoutX="383.0" layoutY="223.0" prefHeight="25.0" prefWidth="237.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="12.0" />
+               </font></JFXTextField>
+         </children>
+      </AnchorPane>
+      <Label layoutX="14.0" layoutY="378.0" prefHeight="17.0" prefWidth="83.0" text="Student Age :">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="ageTxt" layoutX="142.0" layoutY="365.0" prefHeight="25.0" prefWidth="187.0">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="14.0" layoutY="416.0" prefHeight="17.0" prefWidth="97.0" text="Student Address:">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="addressTxt" layoutX="142.0" layoutY="404.0" prefHeight="25.0" prefWidth="187.0">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="15.0" layoutY="456.0" prefHeight="17.0" prefWidth="97.0" text="Student e-mail:">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="emailTxt" layoutX="143.0" layoutY="444.0" prefHeight="25.0" prefWidth="187.0">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="15.0" layoutY="496.0" prefHeight="17.0" prefWidth="97.0" text="Student Tel:">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="talTxt" layoutX="143.0" layoutY="484.0" prefHeight="25.0" prefWidth="187.0">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="15.0" layoutY="533.0" prefHeight="17.0" prefWidth="97.0" text="Student NIC:">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="nicTxt" layoutX="143.0" layoutY="521.0" prefHeight="25.0" prefWidth="187.0">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="15.0" layoutY="571.0" prefHeight="17.0" prefWidth="97.0" text="Student Birth:">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="bdytxt" layoutX="143.0" layoutY="559.0" prefHeight="25.0" prefWidth="187.0">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="11.0" layoutY="14.0" prefHeight="47.0" prefWidth="637.0" style="-fx-background-color: #f80d0d;" text="  StudenT SearcH ForM">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="32.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#2213a8" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <JFXTextField fx:id="bidTxt" layoutX="487.0" layoutY="366.0" />
+      <Label layoutX="404.0" layoutY="382.0" prefHeight="17.0" prefWidth="83.0" text="Student Batch :">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

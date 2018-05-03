@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="640.0" prefWidth="911.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.student.view.TeacherController">
+   <children>
+      <AnchorPane layoutX="9.0" layoutY="10.0" prefHeight="623.0" prefWidth="231.0" style="-fx-background-color: black;">
+         <children>
+            <JFXButton fx:id="regBtn" buttonType="RAISED" layoutX="34.0" layoutY="120.0" onAction="#RegBtnClick" prefHeight="45.0" prefWidth="164.0" style="-fx-background-color: white;" text="Registration" textFill="RED">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="modifyBtn" buttonType="RAISED" layoutX="35.0" layoutY="209.0" onAction="#modifyBtnClick" prefHeight="45.0" prefWidth="164.0" style="-fx-background-color: white;" text="Modification" textFill="#003bff">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="batchBtn" buttonType="RAISED" layoutX="34.0" layoutY="299.0" onAction="#BatchBtnClick" prefHeight="45.0" prefWidth="164.0" style="-fx-background-color: white;" text="Batch" textFill="#ff00cc">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="messageTxt" layoutX="14.0" layoutY="512.0" prefHeight="54.0" prefWidth="204.0" unFocusColor="RED" />
+         </children>
+      </AnchorPane>
+      <Label id="lbl2" fx:id="headLabl" layoutX="31.0" layoutY="28.0" prefHeight="54.0" prefWidth="195.0" text="      Teacher Registration" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="logoutBtn" buttonType="RAISED" layoutX="19.0" layoutY="594.0" onAction="#logOutBtnClick" prefHeight="25.0" prefWidth="100.0" text="LogOut" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane fx:id="middleAnchorPane" layoutX="248.0" layoutY="10.0" prefHeight="623.0" prefWidth="658.0">
+         <children>
+            <ImageView fx:id="sideImg" fitHeight="416.0" fitWidth="644.0" layoutX="-235.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/inspirational-quotes-desktop-wallpapers-and-backgrounds-21.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="7.0" layoutY="429.0" prefHeight="54.0" prefWidth="644.0" style="-fx-background-color: black;" text="  The Orient System Teachers Form">
+               <font>
+                  <Font name="Times New Roman Bold" size="27.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.47777777777777775" centerY="0.16190476190476188" focusDistance="-0.023255813953488413" radius="1.0">
+                     <stops>
+                        <Stop color="RED" />
+                        <Stop color="#750c0c" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <JFXSlider layoutX="150.0" layoutY="516.0" prefHeight="14.0" prefWidth="494.0" />
+            <Label layoutX="21.0" layoutY="515.0" prefHeight="17.0" prefWidth="100.0" text="Teachers">
+               <font>
+                  <Font name="Times New Roman Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXSlider layoutX="150.0" layoutY="551.0" prefHeight="14.0" prefWidth="494.0" value="80.0" />
+            <Label layoutX="21.0" layoutY="550.0" prefHeight="17.0" prefWidth="100.0" text="Student">
+               <font>
+                  <Font name="Times New Roman Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="timeLbl" layoutX="449.0" layoutY="265.0" prefHeight="17.0" prefWidth="111.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="28.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#da1a1a" />
+                        <Stop color="#6b1616" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Label fx:id="dateLbl" layoutX="501.0" layoutY="292.0" prefHeight="20.0" prefWidth="100.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="11.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#da1a1a" />
+                        <Stop color="#3c0808" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

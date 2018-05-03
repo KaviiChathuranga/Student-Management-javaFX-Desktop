@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="studentPanel" prefHeight="625.0" prefWidth="658.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.student.view.StudentPanelController">
+   <children>
+      <Accordion layoutX="127.0" layoutY="132.0" />
+      <ImageView fitHeight="545.0" fitWidth="637.0" layoutX="13.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/402546057-booking-wallpapers.jpg" />
+         </image>
+      </ImageView>
+      <TableView id="myTable" fx:id="myTable" layoutX="14.0" layoutY="315.0" prefHeight="300.0" prefWidth="637.0">
+        <columns>
+          <TableColumn id="sid" fx:id="ridCOL" prefWidth="38.0" text="rid" />
+          <TableColumn id="name" fx:id="nameCOL" prefWidth="112.0" text="name" />
+            <TableColumn id="address" fx:id="addresssCOL" prefWidth="144.0" text="address" />
+            <TableColumn id="batch" fx:id="batchCOL" prefWidth="67.0" text="Batch" />
+            <TableColumn id="nic" fx:id="nicCOL" prefWidth="138.0" text="NIC" />
+            <TableColumn id="tel" fx:id="telCOL" prefWidth="137.0" text="Tel" />
+        </columns>
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+      </TableView>
+      <Label layoutX="11.0" layoutY="14.0" prefHeight="47.0" prefWidth="637.0" style="-fx-background-color: #f80d0d;" text="  New StudenT RegistratioN">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="32.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#2213a8" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="18.0" layoutY="155.0" prefHeight="17.0" prefWidth="95.0" text="Student Address" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="18.0" layoutY="189.0" prefHeight="17.0" prefWidth="95.0" text="Student Age" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font></Label>
+      <JFXTextField fx:id="sNameTxt" labelFloat="true" layoutX="131.0" layoutY="113.0" style="-fx-text-fill: white;" unFocusColor="#c3bfbf">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="sAddressTxt" layoutX="131.0" layoutY="144.0" style="-fx-text-fill: white;" unFocusColor="#fff9f9">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="sAgeTxt" layoutX="131.0" layoutY="178.0" style="-fx-text-fill: white;" unFocusColor="#fff9f9">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font></JFXTextField>
+      <Label layoutX="18.0" layoutY="124.0" prefHeight="17.0" prefWidth="95.0" text="Student Name" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font></Label>
+      <JFXComboBox fx:id="batchBox" layoutX="129.0" layoutY="218.0" prefHeight="25.0" prefWidth="143.0" style="-fx-text-fill: white;" unFocusColor="#c3b6b6" />
+      <Label layoutX="18.0" layoutY="231.0" prefHeight="17.0" prefWidth="95.0" style="-fx-text-fill: white;" text="Batch No">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXDatePicker fx:id="birthDateTxt" defaultColor="#f74919" layoutX="336.0" layoutY="114.0" prefHeight="17.0" prefWidth="155.0" style="-fx-text-fill: white;" />
+      <Label layoutX="294.0" layoutY="155.0" prefHeight="17.0" prefWidth="26.0" text="NIC" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="nicTxt" layoutX="338.0" layoutY="142.0" prefHeight="25.0" prefWidth="144.0" promptText="                    981542015v" style="-fx-text-fill: white;" unFocusColor="#fff9f9">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font></JFXTextField>
+      <Label layoutX="294.0" layoutY="188.0" prefHeight="17.0" prefWidth="26.0" text="Tel" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="telTxt" layoutX="338.0" layoutY="180.0" promptText="                      ***-*******" style="-fx-text-fill: white;" unFocusColor="#fff9f9">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font></JFXTextField>
+      <Label layoutX="294.0" layoutY="123.0" prefHeight="17.0" prefWidth="38.0" text="Birth" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="294.0" layoutY="227.0" prefHeight="17.0" prefWidth="38.0" text="e-mail" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="mailTxt" layoutX="338.0" layoutY="219.0" promptText="           kavii@gmail.com" style="-fx-text-fill: white;" unFocusColor="#fff9f9">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="feeTxt" layoutX="378.0" layoutY="266.0" prefHeight="22.0" prefWidth="109.0" promptText="  fee Rs :" style="-fx-text-fill: white;" unFocusColor="#00fbff">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font></JFXTextField>
+      <Separator layoutX="278.0" layoutY="119.0" orientation="VERTICAL" prefHeight="169.0" prefWidth="8.0" />
+      <JFXButton fx:id="saveBtn" buttonType="RAISED" layoutX="504.0" layoutY="272.0" onAction="#saveBtnClick" prefHeight="33.0" prefWidth="69.0" style="-fx-background-color: #06e41c;" text="Save">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="cancelBtn" buttonType="RAISED" layoutX="581.0" layoutY="272.0" prefHeight="33.0" prefWidth="60.0" style="-fx-background-color: #e75d5d;" text="Cancel">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="18.0" layoutY="268.0" prefHeight="17.0" prefWidth="109.0" text="Today : " textFill="#b5aeae">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="loadDate" layoutX="129.0" layoutY="268.0" prefHeight="17.0" prefWidth="143.0" textFill="#d3bdbd">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font></Label>
+      <AnchorPane layoutX="18.0" layoutY="67.0" prefHeight="41.0" prefWidth="630.0" style="-fx-background-color: #504d4d;">
+         <children>
+            <Label layoutX="14.0" layoutY="12.0" prefHeight="17.0" prefWidth="81.0" text="Now Count : ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#978f8f" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Label fx:id="countLbl" layoutX="102.0" layoutY="12.0" prefHeight="17.0" prefWidth="81.0" text=" " textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="12.0" />
+               </font></Label>
+            <JFXButton buttonType="RAISED" layoutX="516.0" layoutY="7.0" prefHeight="25.0" prefWidth="95.0" ripplerFill="BLACK" style="-fx-background-color: #ff5800;" text="Send e-mail">
+               <font>
+                  <Font name="Times New Roman Bold" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Label fx:id="filechoose" layoutX="515.0" layoutY="219.0" onMouseClicked="#fileChooseClick" prefHeight="17.0" prefWidth="116.0" style="-fx-background-color: lightgray;" text="        Choose Image">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="setPhoto" layoutX="501.0" layoutY="115.0" prefHeight="98.0" prefWidth="136.0" text="             no image" textFill="#487f94" />
+   </children>
+</AnchorPane>

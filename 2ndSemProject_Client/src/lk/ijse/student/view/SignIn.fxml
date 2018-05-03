@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" onKeyReleased="#checkPassword" prefHeight="379.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.student.view.SignInController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="591.0" layoutX="6.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/7d386cb519de2f74a7914723fe6c0407.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="6.0" layoutY="14.0" opacity="0.22" prefHeight="48.0" prefWidth="591.0" style="-fx-background-color: black;" textFill="RED">
+         <font>
+            <Font name="Times New Roman Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="26.0" prefHeight="25.0" prefWidth="162.0" text="   Sign In Form">
+         <font>
+            <Font name="Times New Roman Bold" size="22.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="nameTxt" labelFloat="true" layoutX="104.0" layoutY="210.0" prefHeight="24.0" prefWidth="145.0" promptText="user name" unFocusColor="RED">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="passwordTxt" labelFloat="true" layoutX="104.0" layoutY="254.0" promptText="password" unFocusColor="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="signBtn" buttonType="RAISED" layoutX="177.0" layoutY="336.0" onAction="#signBtnClick" prefHeight="25.0" prefWidth="65.0" ripplerFill="#00ff33" style="-fx-background-color: #e01a1a;" text="Sign in" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <FontAwesomeIconView glyphName="USER" layoutX="74.0" layoutY="232.0" size="20" wrappingWidth="19.0" />
+      <FontAwesomeIconView fill="#0a0909" glyphName="LOCK" layoutX="74.0" layoutY="278.0" size="20" wrappingWidth="18.99999976158142" />
+      <JFXPasswordField fx:id="reTxt" labelFloat="true" layoutX="104.0" layoutY="300.0" onKeyReleased="#checkPassword" promptText="re-enter password" unFocusColor="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXPasswordField>
+      <FontAwesomeIconView fill="#0a0909" glyphName="LOCK" layoutX="74.0" layoutY="324.0" size="20" wrappingWidth="18.99999976158142" />
+      <JFXButton fx:id="backBtn" buttonType="RAISED" layoutX="104.0" layoutY="336.0" onAction="#backBtnClick" prefHeight="25.0" prefWidth="65.0" ripplerFill="#00ff33" style="-fx-background-color: green;" text="Back" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane fx:id="sidePane" layoutX="28.0" layoutY="-82.0" onMouseEntered="#sideEnterd" onMouseExited="#sideExited" prefHeight="72.0" prefWidth="546.0" style="-fx-background-color: black;">
+         <children>
+            <JFXCheckBox fx:id="adminCheck" checkedColor="#14b263" layoutX="42.0" layoutY="27.0" onMouseClicked="#adminCheckClick" text="Admin Form" textFill="WHITE" unCheckedColor="RED">
+               <font>
+                  <Font name="Times New Roman Bold" size="10.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="userCheck" checkedColor="#14b263" layoutX="225.0" layoutY="27.0" onMouseClicked="#userChekClick" text="User Form" textFill="WHITE" unCheckedColor="RED">
+               <font>
+                  <Font name="Times New Roman Bold" size="10.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="teacherChek" checkedColor="#14b263" layoutX="392.0" layoutY="27.0" onMouseClicked="#teacherCheckClick" text="Teacher Form" textFill="#fffbfb" unCheckedColor="RED">
+               <font>
+                  <Font name="Times New Roman Bold" size="10.0" />
+               </font>
+            </JFXCheckBox>
+         </children>
+      </AnchorPane>
+      <JFXHamburger fx:id="hamba" layoutX="546.0" layoutY="90.0" onMouseClicked="#hambaClick" />
+   </children>
+</AnchorPane>

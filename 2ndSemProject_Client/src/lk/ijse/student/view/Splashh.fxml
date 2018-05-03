@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="641.0" style="-fx-background-color: #4dcdea;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.student.view.SplashhController">
+   <children>
+      <ImageView fitHeight="313.0" fitWidth="625.0" layoutX="9.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/47ea1c521bed917e5afb9b1cf6571384.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="160.0" fitWidth="167.0" layoutX="466.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/selena_gomez_circle_png_by_lovingsellygrande-d4u8yew.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="331.0" prefHeight="17.0" prefWidth="355.0" text="The Orient Student Registration">
+         <font>
+            <Font name="Times New Roman Bold" size="22.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.0761904761904762" startX="0.9238095238095239" startY="0.9428571428571428">
+               <stops>
+                  <Stop color="#bf0000" />
+                  <Stop color="#ff2121" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="16.0" layoutY="356.0" prefHeight="17.0" prefWidth="215.0" text="New Genaration of Education ">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.8166666666666667" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#bf0000" />
+                  <Stop color="#b24c4c" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>

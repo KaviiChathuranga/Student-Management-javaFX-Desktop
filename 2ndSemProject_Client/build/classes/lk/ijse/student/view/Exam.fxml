@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="625.0" prefWidth="658.0" style="-fx-background-color: White;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.student.view.ExamController">
+   <children>
+      <ImageView fitHeight="550.0" fitWidth="719.0" layoutX="9.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/wpid-green-leaf-spring-vector-background-free-33888.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="11.0" layoutY="14.0" prefHeight="47.0" prefWidth="637.0" style="-fx-background-color: #f80d0d;" text="  The ExaM ForM">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="32.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#2213a8" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <AnchorPane layoutX="11.0" layoutY="68.0" prefHeight="41.0" prefWidth="637.0" style="-fx-background-color: #504d4d;">
+         <children>
+            <Label layoutX="14.0" layoutY="12.0" prefHeight="17.0" prefWidth="81.0" text="Now Count : ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#978f8f" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label fx:id="exCountLbl" layoutX="102.0" layoutY="12.0" prefHeight="17.0" prefWidth="81.0" text=" " />
+            <Label layoutX="398.0" layoutY="12.0" prefHeight="17.0" prefWidth="81.0" text="Exam Id :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#978f8f" />
+                        <Stop color="#f5f5f5" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <JFXTextField fx:id="examIdTxt" layoutX="479.0" layoutY="2.0" prefHeight="25.0" prefWidth="135.0" style="-fx-text-fill: white;" unFocusColor="RED">
+               <font>
+                  <Font name="Times New Roman Bold" size="12.0" />
+               </font></JFXTextField>
+         </children>
+      </AnchorPane>
+      <JFXComboBox fx:id="batchBox" layoutX="83.0" layoutY="118.0" onAction="#batchAction" prefHeight="25.0" prefWidth="116.0" />
+      <Label layoutX="16.0" layoutY="130.0" prefHeight="17.0" prefWidth="81.0" text="Batch">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#978f8f" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <JFXComboBox fx:id="subjectBox" layoutX="83.0" layoutY="154.0" prefHeight="25.0" prefWidth="116.0" />
+      <Label layoutX="16.0" layoutY="166.0" prefHeight="17.0" prefWidth="81.0" text="Subject">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#978f8f" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <JFXDatePicker fx:id="dateTxt" layoutX="57.0" layoutY="212.0" prefHeight="25.0" prefWidth="150.0" />
+      <JFXButton fx:id="examBtn" buttonType="RAISED" layoutX="536.0" layoutY="225.0" onAction="#examBtnClick" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: #ffa100;" text="Add Exam">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXTimePicker fx:id="timeTxt" layoutX="228.0" layoutY="213.0" />
+      <JFXComboBox fx:id="hallBox" layoutX="292.0" layoutY="118.0" prefHeight="25.0" prefWidth="135.0" />
+      <TableView fx:id="examTable" layoutX="8.0" layoutY="286.0" prefHeight="324.0" prefWidth="637.0">
+        <columns>
+          <TableColumn fx:id="eidCOL" prefWidth="48.0" text="EID" />
+          <TableColumn fx:id="batchCOL" prefWidth="59.0" text="Batch" />
+            <TableColumn fx:id="subCOL" prefWidth="147.0" text="Subject" />
+            <TableColumn fx:id="dateCOL" prefWidth="139.0" text="Date" />
+            <TableColumn fx:id="timeCOL" prefWidth="96.0" text="Time" />
+            <TableColumn fx:id="hallCOL" prefWidth="58.0" text="Hall" />
+            <TableColumn fx:id="typeCOL" prefWidth="93.0" text="Type" />
+        </columns>
+      </TableView>
+      <JFXComboBox fx:id="typeCMB" layoutX="500.0" layoutY="118.0" prefHeight="25.0" prefWidth="104.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="625.0" prefWidth="658.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.student.view.ModifyStudentPanelController">
+   <children>
+      <ImageView fitHeight="553.0" fitWidth="637.0" layoutX="11.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/wpid-green-leaf-spring-vector-background-free-33888.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="11.0" layoutY="14.0" prefHeight="47.0" prefWidth="637.0" style="-fx-background-color: #f80d0d;" text="  The StudenT ModificatioN">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="32.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#2213a8" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="24.0" layoutY="159.0" prefHeight="17.0" prefWidth="95.0" text="Student Address">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#8a7a7a" />
+                  <Stop color="#545454" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="24.0" layoutY="193.0" prefHeight="17.0" prefWidth="95.0" text="Student Age">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#8a7a7a" />
+                  <Stop color="#545454" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <JFXTextField fx:id="sNameTxt" labelFloat="true" layoutX="137.0" layoutY="111.0" />
+      <JFXTextField fx:id="sAddressTxt" layoutX="137.0" layoutY="143.0" />
+      <JFXTextField fx:id="sAgeTxt" layoutX="137.0" layoutY="182.0" />
+      <Label layoutX="24.0" layoutY="128.0" prefHeight="17.0" prefWidth="95.0" text="Student Name">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#8a7a7a" />
+                  <Stop color="#545454" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="24.0" layoutY="235.0" prefHeight="17.0" prefWidth="95.0" text="Batch No">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#8a7a7a" />
+                  <Stop color="#545454" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <JFXTextField fx:id="nicTxt" layoutX="344.0" layoutY="146.0" promptText="                    981542015v" />
+      <JFXTextField fx:id="telTxt" layoutX="344.0" layoutY="184.0" promptText="                      ***-*******" />
+      <Label layoutX="300.0" layoutY="127.0" prefHeight="17.0" prefWidth="38.0" text="Birth">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#8a7a7a" />
+                  <Stop color="#545454" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="300.0" layoutY="231.0" prefHeight="17.0" prefWidth="38.0" text="e-mail">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#8a7a7a" />
+                  <Stop color="#545454" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <JFXTextField fx:id="mailTxt" layoutX="344.0" layoutY="223.0" prefHeight="25.0" prefWidth="232.0" promptText="           kavii@gmail.com" />
+      <Separator layoutX="282.0" layoutY="117.0" orientation="VERTICAL" prefHeight="178.0" prefWidth="5.0" />
+      <Label layoutX="24.0" layoutY="272.0" prefHeight="17.0" prefWidth="109.0" text="Today : ">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#8a7a7a" />
+                  <Stop color="#545454" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="loadDate" layoutX="135.0" layoutY="272.0" prefHeight="17.0" prefWidth="143.0" textFill="#b2a4a4" />
+      <JFXTextField fx:id="sBatchTxt1" layoutX="139.0" layoutY="227.0" />
+      <Label layoutX="300.0" layoutY="193.0" prefHeight="17.0" prefWidth="38.0" text="Tel">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#8a7a7a" />
+                  <Stop color="#545454" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="300.0" layoutY="160.0" prefHeight="17.0" prefWidth="38.0" text="NIC">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#8a7a7a" />
+                  <Stop color="#545454" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TableView id="myTable" fx:id="myTable" layoutX="11.0" layoutY="312.0" prefHeight="303.0" prefWidth="637.0" style="-fx-background-color: #00000;">
+         <columns>
+            <TableColumn id="sid" fx:id="sid" prefWidth="38.0" text="sid" />
+            <TableColumn id="name" fx:id="name" prefWidth="112.0" text="name" />
+            <TableColumn id="address" fx:id="addresss" prefWidth="144.0" text="address" />
+            <TableColumn id="batch" fx:id="batch" prefWidth="67.0" text="Batch" />
+            <TableColumn id="nic" fx:id="nic" prefWidth="138.0" text="NIC" />
+            <TableColumn id="tel" fx:id="tel" prefWidth="137.0" text="Tel" />
+         </columns>
+         <effect>
+            <Glow />
+         </effect>
+      </TableView>
+      <JFXButton fx:id="removeOkBtn" buttonType="RAISED" layoutX="573.0" layoutY="273.0" prefHeight="32.0" prefWidth="63.0" style="-fx-background-color: #ff0202;" text="Remove" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="updateOkBtn" buttonType="RAISED" layoutX="497.0" layoutY="273.0" onMouseClicked="#updateBtnClick" prefHeight="32.0" prefWidth="63.0" style="-fx-background-color: #f6ff00;" text="Update" textFill="RED">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="bdyTxt" layoutX="344.0" layoutY="116.0" />
+      <AnchorPane layoutX="11.0" layoutY="65.0" prefHeight="41.0" prefWidth="637.0" style="-fx-background-color: #504d4d;">
+         <children>
+            <Label layoutX="14.0" layoutY="11.0" prefHeight="17.0" prefWidth="78.0" text="Search one">
+               <font>
+                  <Font name="Times New Roman Bold" size="12.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#a4a4a8" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="263.0" layoutY="11.0" prefHeight="17.0" prefWidth="78.0" text="Search All">
+               <font>
+                  <Font name="Times New Roman Bold" size="12.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#a4a4a8" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <JFXTextField fx:id="sidTxt" layoutX="92.0" layoutY="8.0" onAction="#idAction" unFocusColor="#d71717" />
+            <JFXComboBox fx:id="bidBox" layoutX="341.0" layoutY="9.0" onAction="#batchAction" onMouseClicked="#batchClick" prefHeight="25.0" prefWidth="109.0" />
+            <JFXComboBox fx:id="subBox" layoutX="468.0" layoutY="9.0" prefHeight="25.0" prefWidth="155.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

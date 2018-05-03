@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="625.0" prefWidth="658.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.student.view.AttendanceController">
+   <children>
+      <Label layoutX="11.0" layoutY="14.0" prefHeight="47.0" prefWidth="637.0" style="-fx-background-color: #f80d0d;" text="  StudenT AttendancE MarK">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="32.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#2213a8" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ImageView fitHeight="550.0" fitWidth="637.0" layoutX="11.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/wpid-green-leaf-spring-vector-background-free-33888.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="11.0" layoutY="68.0" prefHeight="40.0" prefWidth="637.0" style="-fx-background-color: #504d4d;">
+         <children>
+            <Label layoutX="14.0" layoutY="12.0" prefHeight="17.0" prefWidth="81.0" text="Now Count : ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#978f8f" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Label fx:id="countLbl" layoutX="102.0" layoutY="12.0" prefHeight="17.0" prefWidth="81.0" text=" " textFill="WHITE" />
+            <Label layoutX="454.0" layoutY="12.0" prefHeight="17.0" prefWidth="81.0" text="Student :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#978f8f" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <JFXTextField fx:id="sidTxt" layoutX="512.0" layoutY="2.0" prefHeight="25.0" prefWidth="111.0" style="-fx-text-fill: white;" unFocusColor="#f50e0e" />
+         </children>
+      </AnchorPane>
+      <JFXComboBox fx:id="batchCMB" layoutX="14.0" layoutY="117.0" onAction="#batchAction" prefHeight="25.0" prefWidth="169.0" />
+      <Label layoutX="10.0" layoutY="163.0" prefHeight="17.0" prefWidth="81.0" text="Time Now :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#978f8f" />
+                  <Stop color="#462d2d" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="12.0" layoutY="188.0" prefHeight="17.0" prefWidth="81.0" text="Today :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#978f8f" />
+                  <Stop color="#462d2d" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <JFXTextField fx:id="dayTxt" layoutX="93.0" layoutY="176.0" prefHeight="25.0" prefWidth="136.0" />
+      <JFXButton fx:id="attBtn" buttonType="RAISED" layoutX="497.0" layoutY="248.0" onMouseClicked="#attBtnClick" prefHeight="25.0" prefWidth="147.0" style="-fx-background-color: #fb04d2;" text="Attended">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXTimePicker fx:id="timeTxt" layoutX="91.0" layoutY="151.0" />
+      <JFXComboBox fx:id="subCMB" layoutX="203.0" layoutY="117.0" onAction="#subAction" prefHeight="25.0" prefWidth="169.0" />
+      <TableView fx:id="attTable" layoutX="11.0" layoutY="292.0" prefHeight="324.0" prefWidth="637.0">
+        <columns>
+          <TableColumn fx:id="ridCOL" prefWidth="40.0" text="RID" />
+          <TableColumn fx:id="nameCOL" prefWidth="181.0" text="Student" />
+            <TableColumn fx:id="timeCOL" prefWidth="87.0" text="Time" />
+            <TableColumn fx:id="batchCOL" prefWidth="69.0" text="Batch" />
+            <TableColumn fx:id="subjectCOL" prefWidth="145.0" text="Subject" />
+            <TableColumn fx:id="dateCOL" prefWidth="113.0" text="Date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

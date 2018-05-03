@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="625.0" prefWidth="658.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.student.view.ResultController">
+   <children>
+      <ImageView fitHeight="545.0" fitWidth="637.0" layoutX="11.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/402546057-booking-wallpapers.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="11.0" layoutY="14.0" prefHeight="47.0" prefWidth="637.0" style="-fx-background-color: #f80d0d;" text="  StudenT ResultS">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="32.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#2213a8" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <AnchorPane layoutX="11.0" layoutY="69.0" prefHeight="41.0" prefWidth="637.0" style="-fx-background-color: #504d4d;">
+         <children>
+            <Label layoutX="398.0" layoutY="12.0" prefHeight="17.0" prefWidth="81.0" text="Exam Id :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#978f8f" />
+                        <Stop color="#f5f5f5" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <JFXTextField fx:id="examIdTxt" layoutX="479.0" layoutY="2.0" onAction="#eidAction" prefHeight="25.0" prefWidth="135.0" style="-fx-text-fill: white;" unFocusColor="RED">
+               <font>
+                  <Font name="Times New Roman Bold" size="12.0" />
+               </font></JFXTextField>
+         </children>
+      </AnchorPane>
+      <Label layoutX="23.0" layoutY="141.0" prefHeight="17.0" prefWidth="71.0" text="Batch" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="batchtxt" layoutX="94.0" layoutY="131.0" prefHeight="25.0" prefWidth="135.0" style="-fx-text-fill: white;" unFocusColor="#d08989">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font></JFXTextField>
+      <Label layoutX="24.0" layoutY="177.0" prefHeight="17.0" prefWidth="71.0" text="Subject" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="subjectTxt" layoutX="95.0" layoutY="167.0" prefHeight="25.0" prefWidth="135.0" style="-fx-text-fill: white;" unFocusColor="#d08989">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font></JFXTextField>
+      <Label layoutX="417.0" layoutY="146.0" prefHeight="17.0" prefWidth="81.0" text="date" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="dateTxt" layoutX="498.0" layoutY="136.0" prefHeight="25.0" prefWidth="135.0" style="-fx-text-fill: white;" unFocusColor="#d08989">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font></JFXTextField>
+      <AnchorPane layoutX="14.0" layoutY="207.0" prefHeight="41.0" prefWidth="630.0" style="-fx-background-color: #504d4d;">
+         <children>
+            <Label layoutX="398.0" layoutY="12.0" prefHeight="17.0" prefWidth="81.0" text="Student">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#978f8f" />
+                        <Stop color="#f5f5f5" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <JFXTextField fx:id="sidTxt" layoutX="479.0" layoutY="2.0" onAction="#sidAction" prefHeight="25.0" prefWidth="135.0" style="-fx-text-fill: white;" unFocusColor="RED">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXTextField>
+         </children>
+      </AnchorPane>
+      <JFXTextField fx:id="nameTxt" layoutX="14.0" layoutY="272.0" prefHeight="25.0" prefWidth="135.0" style="-fx-text-fill: white;" unFocusColor="BLACK">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="NicTxt" layoutX="184.0" layoutY="272.0" prefHeight="25.0" prefWidth="135.0" style="-fx-text-fill: white;" unFocusColor="BLACK">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font></JFXTextField>
+      <Label layoutX="411.0" layoutY="281.0" prefHeight="17.0" prefWidth="81.0" text="Input Result :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="resultTxt" layoutX="492.0" layoutY="271.0" prefHeight="25.0" prefWidth="135.0" unFocusColor="BLACK">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font></JFXTextField>
+      <JFXButton fx:id="inputBtn" buttonType="RAISED" layoutX="513.0" layoutY="300.0" onAction="#inputBtnClick" prefHeight="25.0" prefWidth="106.0" style="-fx-background-color: #ff00f3;" text="Input" textFill="#fff2ff">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="resultTable" layoutX="11.0" layoutY="336.0" prefHeight="279.0" prefWidth="637.0">
+        <columns>
+          <TableColumn fx:id="eidCOL" prefWidth="43.0" text="EID" />
+          <TableColumn fx:id="dateCOL" prefWidth="132.0" text="Date" />
+            <TableColumn fx:id="ridCOL" prefWidth="50.0" text="RID" />
+            <TableColumn fx:id="nameCOL" prefWidth="162.0" text="Student" />
+            <TableColumn fx:id="nicCOL" prefWidth="154.0" text="Nic" />
+            <TableColumn fx:id="marksCOL" prefWidth="43.0" text="Marks" />
+            <TableColumn fx:id="gradeCOL" prefWidth="52.0" text="Grade" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="updateBtn" buttonType="RAISED" layoutX="399.0" layoutY="300.0" onAction="#updateBtnClick" prefHeight="25.0" prefWidth="106.0" style="-fx-background-color: green;" text="Update" textFill="#fff2ff">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

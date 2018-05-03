@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="625.0" prefWidth="658.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.student.view.BatchController">
+   <children>
+      <Label layoutX="11.0" layoutY="14.0" prefHeight="47.0" prefWidth="637.0" style="-fx-background-color: #f80d0d;" text="  StudenT BaTch ForM">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="32.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#2213a8" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ImageView fx:id="backImg" fitHeight="557.0" fitWidth="637.0" layoutX="11.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/wpid-green-leaf-spring-vector-background-free-33888.jpg" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="nametxt" layoutX="122.0" layoutY="77.0" prefHeight="25.0" prefWidth="233.0">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font></JFXTextField>
+      <Label layoutX="23.0" layoutY="89.0" prefHeight="17.0" prefWidth="81.0" text="Batch Name">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="127.0" prefHeight="17.0" prefWidth="81.0" text="Student Limit">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="limitTxt" layoutX="122.0" layoutY="115.0" prefHeight="25.0" prefWidth="233.0">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font></JFXTextField>
+      <Label layoutX="23.0" layoutY="165.0" prefHeight="17.0" prefWidth="81.0" text="Year">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="yearTxt" layoutX="122.0" layoutY="153.0" prefHeight="25.0" prefWidth="233.0">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font></JFXTextField>
+      <Label layoutX="23.0" layoutY="204.0" prefHeight="17.0" prefWidth="81.0" text="Reg Fee">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="feeTxt" layoutX="122.0" layoutY="192.0" prefHeight="25.0" prefWidth="233.0">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font></JFXTextField>
+      <JFXButton fx:id="regBtn" buttonType="RAISED" layoutX="521.0" layoutY="217.0" onAction="#regBtnClick" prefHeight="25.0" prefWidth="118.0" style="-fx-background-color: Orange;" text="Register">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="batchTable" layoutX="11.0" layoutY="275.0" prefHeight="340.0" prefWidth="637.0">
+         <columns>
+            <TableColumn fx:id="idCOL" prefWidth="75.0" text="batch" />
+            <TableColumn fx:id="nameCOL" prefWidth="164.0" text="Name" />
+            <TableColumn fx:id="limitCOL" prefWidth="132.0" text="Student_limit" />
+            <TableColumn fx:id="yearCOL" prefWidth="112.0" text="Year" />
+            <TableColumn fx:id="feeCOL" prefWidth="152.0" text="Reg Fee" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
